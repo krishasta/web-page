@@ -40,7 +40,7 @@ const Topbar = () => {
           {/* Left: Logo */}
           <div className="flex items-center">
             <NavLink to="/" className="cursor-pointer group flex items-center">
-              <span className="solve-logo-text text-4xl md:text-5xl uppercase transition-transform duration-300 group-hover:scale-105">SOLVE</span>
+              <span className="solve-logo-text text-4xl uppercase transition-transform duration-300 group-hover:scale-105">SOLVE</span>
               {/* <span className="text-[10px] md:text-[12px] uppercase tracking-[0.2em] font-medium text-[var(--text-secondary)] -mt-1 opacity-80 group-hover:text-[var(--primary)] transition-colors">
               solutions simplified
             </span> */}

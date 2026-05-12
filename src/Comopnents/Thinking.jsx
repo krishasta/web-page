@@ -92,11 +92,11 @@ const Thinking = () => {
       <BlogNavigation />
 
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase transition-colors"
+        <h1 className="text-4xl font-black tracking-tight mb-6 uppercase transition-colors"
           style={{ color: 'var(--text-primary)' }}>
           <span className="animate-float-blue">White</span> Papers
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium opacity-80 mb-10"
+        <p className="text-lg max-w-2xl mx-auto leading-relaxed font-medium opacity-80 mb-10"
           style={{ color: 'var(--text-secondary)' }}>
           Explore our thought leadership, technical documents, and in-depth research papers available for download.
         </p>

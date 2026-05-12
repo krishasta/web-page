@@ -91,10 +91,10 @@ const ProductMain = () => {
             }}>
             Innovation Showcase
           </span> */}
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase transition-colors" style={{ color: "var(--text-primary)" }}>
+          <h1 className="text-4xl font-black tracking-tight mb-6 uppercase transition-colors" style={{ color: "var(--text-primary)" }}>
             <span className="animate-float-blue">Engineered</span> Solutions
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium opacity-80 transition-colors" style={{ color: "var(--text-secondary)" }}>
+          <p className="text-lg max-w-2xl mx-auto leading-relaxed font-medium opacity-80 transition-colors" style={{ color: "var(--text-secondary)" }}>
             Discover our portfolio of industry-leading products, designed with precision and built for scale.
           </p>
         </motion.div>
@@ -193,7 +193,7 @@ const ProductMain = () => {
                     </div>
 
                     <div className="p-8 flex flex-col justify-center items-center flex-1 text-center">
-                      <h2 className="text-xl md:text-2xl font-black tracking-tight mb-2 group-hover:text-[var(--primary)] transition-colors uppercase"
+                      <h2 className="text-xl font-black tracking-tight mb-2 group-hover:text-[var(--primary)] transition-colors uppercase"
                         style={{ color: styles.textPrimary }}>
                         {product.title}
                       </h2>

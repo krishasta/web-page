@@ -40,7 +40,7 @@ const Teams = () => {
         {/* <p className="text-xs font-bold tracking-[0.35em] uppercase mb-3 transition-colors" style={{ color: colors.subtitleText }}>
           The People Behind the Work
         </p> */}
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase transition-colors" style={{ color: "var(--text-primary)" }}>
+        <h1 className="text-4xl font-black tracking-tight mb-6 uppercase transition-colors" style={{ color: "var(--text-primary)" }}>
           <span className="animate-float-blue">Our</span> Team
         </h1>
         {/* <div className="flex justify-center mt-5">

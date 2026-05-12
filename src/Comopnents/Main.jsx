@@ -288,7 +288,7 @@ export default function Main() {
           className="mt-8 max-w-3xl mx-auto"
         >
           <p
-            className="text-2xl sm:text-3xl md:text-4xl leading-tight font-bold tracking-tight transition-colors duration-300 animate-float-blue"
+            className="text-2xl leading-tight font-bold tracking-tight transition-colors duration-300 animate-float-blue"
             style={{ color: "var(--text-primary)" }}
           >
             <span className="animate-float-blue text-5xl uppercase font-black tracking-tighter">Solve</span> is a technology company focused on designing and building high-quality electronic solutions for modern applications.

@@ -153,7 +153,7 @@ const Blog = () => {
       <BlogNavigation />
       <div className="flex justify-center mb-10 text-3xl font-black uppercase text-center"
         style={{ color: colors.headingText }}>
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase transition-colors"
+        <h1 className="text-4xl font-black tracking-tight mb-6 uppercase transition-colors"
           style={{ color: 'var(--text-primary)' }}>
           <span className="animate-float-blue">Latest</span> Articles
         </h1>

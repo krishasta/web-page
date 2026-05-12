@@ -570,7 +570,7 @@ const Products = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="text-4xl md:text-6xl font-black bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight text-center max-w-4xl"
+                    className="text-4xl font-black bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight text-center max-w-4xl"
                   >
                     {displayItems[0].title}
                   </motion.h2>
@@ -603,7 +603,7 @@ const Products = () => {
                           {item.subtitle || `Stage ${i + 1}`}
                         </div>
 
-                        <p className="text-base md:text-xl font-medium leading-relaxed opacity-90 border-l-2 border-sky-500/30 pl-6" style={{ color: colors.text }}>
+                        <p className="text-base font-medium leading-relaxed opacity-90 border-l-2 border-sky-500/30 pl-6" style={{ color: colors.text }}>
                           {item.paragraph}
                         </p>
                       </motion.div>

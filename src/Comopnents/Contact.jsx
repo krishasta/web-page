@@ -69,10 +69,10 @@ const Contact = () => {
         {/* <p className="text-xs font-bold tracking-[0.35em] uppercase mb-3 transition-colors" style={{ color: colors.subtitleText }}>
           Get In Touch
         </p> */}
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 transition-colors" style={{ color: colors.headingText }}>
+        <h1 className="text-4xl font-extrabold tracking-tight mb-4 transition-colors" style={{ color: colors.headingText }}>
           <span className="animate-float-blue ">CONTACT</span> US
         </h1>
-        <p className="text-base sm:text-lg transition-colors" style={{ color: colors.bodyText }}>
+        <p className="text-base transition-colors" style={{ color: colors.bodyText }}>
           Let's get this conversation started. Tell us a bit about yourself,
           and we'll get in touch as soon as we can.
         </p>

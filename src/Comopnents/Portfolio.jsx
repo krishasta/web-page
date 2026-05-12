@@ -75,10 +75,10 @@ const Portfolio = () => {
     <div className="min-h-screen pt-20 transition-colors duration-400" style={{ background: colors.sectionBg, color: colors.bodyText }}>
       {/* Section Heading */}
       <div className="text-center mb-10 px-4">
-        <h1 className="text-3xl md:text-5xl font-extrabold tracking-wide transition-colors" style={{ color: colors.headingText }}>
+        <h1 className="text-3xl font-extrabold tracking-wide transition-colors" style={{ color: colors.headingText }}>
           Portfolio
         </h1>
-        <p className="mt-2 text-sm md:text-base opacity-80">
+        <p className="mt-2 text-sm opacity-80">
           Our latest PCB designs & controllers
         </p>
       </div>
@@ -125,7 +125,7 @@ const Portfolio = () => {
             </div>
 
             {/* Title */}
-            <h1 className="text-center py-4 font-semibold text-sm sm:text-base md:text-lg transition-colors" style={{ color: colors.headingText }}>
+            <h1 className="text-center py-4 font-semibold text-sm transition-colors" style={{ color: colors.headingText }}>
               {i.title}
             </h1>
           </motion.div>

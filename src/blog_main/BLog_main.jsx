@@ -94,7 +94,7 @@ const BLog_main = () => {
             >
                 {/* Title */}
                 <h1
-                    className="text-2xl md:text-4xl font-black leading-snug mb-6"
+                    className="text-2xl font-black leading-snug mb-6"
                     style={{ color: colors.headingText }}
                 >
                     {blog.title}

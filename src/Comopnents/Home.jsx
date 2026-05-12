@@ -290,8 +290,8 @@ const Home = () => {
                   </div>
                   <div className="lg:w-[42%] text-center lg:text-left p-10 md:p-14 rounded-[2.5rem] border border-white/20 backdrop-blur-md"
                     style={{ ...cardStyle, background: dark ? "rgba(15, 23, 42, 0.3)" : "rgba(255, 255, 255, 0.6)" }}>
-                    <h2 className="text-3xl md:text-6xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Vision</h2>
-                    <p className="leading-relaxed text-base md:text-xl font-medium" style={{ color: colors.cardText }}>
+                    <h2 className="text-3xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Vision</h2>
+                    <p className="leading-relaxed text-base font-medium" style={{ color: colors.cardText }}>
                       <span className=" font-black animate-float-blue uppercase">At Solve</span>, we envision a future where engineering integrates creativity, logic, and sustainability to deliver impactful solutions. We specialize in designing custom electronic systems that combine innovation with a strong foundation in scientific principles. Our focus is on developing technology that serves society, aligns with environmental responsibility, and supports a more connected and sustainable world.
                     </p>
                   </div>
@@ -304,8 +304,8 @@ const Home = () => {
                 >
                   <div className="lg:w-[42%] text-center lg:text-left p-10 md:p-14 rounded-[2.5rem] border border-white/20 backdrop-blur-md"
                     style={{ ...cardStyle, background: dark ? "rgba(15, 23, 42, 0.3)" : "rgba(255, 255, 255, 0.6)" }}>
-                    <h2 className="text-3xl md:text-6xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Mission</h2>
-                    <p className="leading-relaxed text-base md:text-xl font-medium" style={{ color: colors.cardText }}>
+                    <h2 className="text-3xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Mission</h2>
+                    <p className="leading-relaxed text-base font-medium" style={{ color: colors.cardText }}>
                       <span className="font-black animate-float-blue uppercase">At Solve</span>, our mission is to deliver custom electronic solutions that combine precision, innovation, and purpose. We simplify complex challenges through thoughtful design and advanced technology, guided by strong engineering principles and ethical responsibility. We are committed to quality, transparency, and continuous learning, with a focus on creating environmentally responsible and sustainable solutions.
                     </p>
                   </div>
@@ -331,8 +331,8 @@ const Home = () => {
                       boxShadow: dark ? '0 0 30px rgba(56, 189, 248, 0.1)' : '0 20px 40px -10px rgba(0, 0, 0, 0.05)'
                     }}>
                     {!dark && <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/80 to-transparent" />}
-                    <h2 className="text-3xl md:text-6xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Passion</h2>
-                    <p className="leading-relaxed text-base md:text-xl font-medium" style={{ color: colors.cardText }}>
+                    <h2 className="text-3xl font-black mb-8 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">Our Passion</h2>
+                    <p className="leading-relaxed text-base font-medium" style={{ color: colors.cardText }}>
                       <span className="font-black animate-float-blue uppercase">At Solve</span>, we are committed to logical problem-solving and the transformative power of engineering. By combining analytical thinking with creative ingenuity, we deliver solutions that are both effective and purposeful. Continuous learning drives our innovation, and every design is an opportunity to create a meaningful impact on industries, people, and the environment.
                     </p>
                   </div>
@@ -404,7 +404,7 @@ const Home = () => {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-3xl md:text-6xl font-black mb-12 md:mb-24 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight"
+                  className="text-3xl font-black mb-12 md:mb-24 bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight"
                 >
                   Our Core <span className="text-[var(--text-primary)]">Values</span>
                 </motion.h2>
@@ -421,7 +421,7 @@ const Home = () => {
                       className="p-10 rounded-[2.5rem] group hover:-translate-y-2 transition-all duration-500"
                       style={{ ...cardStyle, background: dark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.02)", border: "none" }}
                     >
-                      <h3 className="text-xl md:text-2xl font-black mb-6 drop-shadow-md group-hover:text-[var(--primary)] transition-colors duration-300" style={{ color: dark ? "#ffffff" : "#1e293b" }}>{value.title}</h3>
+                      <h3 className="text-xl font-black mb-6 drop-shadow-md group-hover:text-[var(--primary)] transition-colors duration-300" style={{ color: dark ? "#ffffff" : "#1e293b" }}>{value.title}</h3>
                       <p className="text-lg font-bold leading-relaxed drop-shadow-sm" style={{ color: dark ? "#f1f5f9" : "#334155" }}>{value.desc}</p>
                     </motion.div>
                   ))}

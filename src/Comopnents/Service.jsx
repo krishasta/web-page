@@ -122,13 +122,13 @@ const Service = () => {
     >
       {/* ── Header ── */}
       <div className="text-center max-w-4xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 uppercase transition-colors" >
+        <h1 className="text-4xl font-black tracking-tight mb-6 uppercase transition-colors" >
           <span className="animate-float-blue" style={{ color: "var(--primary)" }}>Our</span> Services
         </h1>
-        <h3 className="text-xl md:text-2xl font-semibold mb-4 transition-colors" style={{ color: "var(--primary)" }}>
+        <h3 className="text-xl font-semibold mb-4 transition-colors" style={{ color: "var(--primary)" }}>
           Need help creating a complete, assembled electronics product?
         </h3>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium opacity-80 transition-colors" style={{ color: "var(--text-secondary)" }}>
+        <p className="text-lg max-w-2xl mx-auto leading-relaxed font-medium opacity-80 transition-colors" style={{ color: "var(--text-secondary)" }}>
           We provide integrated design, engineering, compliance, testing and
           production services to help get you from concept to market.
         </p>
