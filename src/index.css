@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #fcfdff;
+  --bg-secondary: #f4f7ff;
+  --surface: rgba(255, 255, 255, 0.85);
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --primary: #0ea5e9;
+  --accent: #38bdf8;
+  --border: rgba(226, 232, 240, 0.6);
+  --card-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.12), 0 4px 12px -5px rgba(14, 165, 233, 0.08);
+  --hero-bg: #f8fafc;
+}
+
+.dark {
+  /* Absolute OLED Black Theme */
+  --bg-primary: #090808;
+  --bg-secondary: #050505;
+  --surface: #0f0f0f;
+  --text-primary: #f8fafc;
+  --text-secondary: #a1a1aa;
+  --primary: #38bdf8;
+  --accent: #0ea5e9;
+  --border: #1f1f1f;
+  --card-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.8), 0 8px 10px -6px rgb(0 0 0 / 0.8);
+  --hero-bg: #0a0909;
+}
+
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom Swiper Pagination for Inter theme */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background: #94a3b8 !important;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px;
+  background: var(--primary) !important;
+  opacity: 1;
+}
+
+.dark .swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}
+
+/* Floating Animation for Blue Text */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-blue {
+  display: inline-block;
+  animation: float 2.5s ease-in-out infinite;
+  color: var(--primary);
+}
+
+.solve-font-lined {
+  background-image: repeating-linear-gradient(0deg,
+      var(--primary),
+      var(--primary) 1px,
+      transparent 1px,
+      transparent 2px);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* For a more pronounced effect as seen in the image */
+.solve-logo-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  background-image: repeating-linear-gradient(0deg,
+      var(--primary),
+      var(--primary) 4px,
+      transparent 3px,
+      transparent 5px);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

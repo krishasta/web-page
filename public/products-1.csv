@@ -1,0 +1,276 @@
+title,paragraph
+APEX,"APEX � Edge Gateway & DDC Controller
+
+We designed and developed the APEX, a high-performance Edge Gateway and Direct Digital Controller (DDC), engineered for reliable data acquisition, network integration, and real-time control at the edge.
+
+This platform enables seamless communication between field devices and higher-level systems, while executing control logic locally for faster response and improved system efficiency. The design focuses on scalability, robustness, and long-term deployment in distributed environments."
+,"Our Contribution
+Complete hardware architecture design and development
+Embedded Linux-based system implementation
+Multi-interface device and network integration
+Real-time data acquisition and edge processing
+Scalable platform development for distributed systems"
+,"System Highlights
+Multi-functional Edge Platform
+Combines gateway functionality, protocol interfacing, and control logic execution
+Reliable Communication Backbone
+Designed for stable operation across multiple field networks
+Edge Intelligence
+Enables local decision-making, reducing dependency on central systems
+Data Handling & Storage
+Supports logging, backup, and historical data management"
+,"Technical Specifications
+
+Processing
+
+Octa-core ARM Cortex-A55 (64-bit) @ 1.8 GHz
+
+Operating System
+
+Embedded Linux
+
+Memory & Storage
+
+2 GB LPDDR4 RAM
+16 GB eMMC Flash
+MicroSD Card Slot (Data logging & backup)
+
+Connectivity
+
+1 � Gigabit Ethernet (RJ45)
+1 � 100 Mbps Ethernet (RJ45)
+3 � RS485 Ports
+
+Wireless & Positioning
+
+1 � GSM
+1 � LoRa
+1  GPS
+
+Interfaces
+
+2  USB Type-A (CLI / Debug Interface)"
+,"Outcome
+
+The APEX 200 serves as a flexible and future-ready edge platform, enabling efficient system integration, reliable communication, and scalable deployment across complex, multi-device environments.-"
+,
+NEXIS,"NEXIS  Modular Control & I/O Platform
+
+The NEXIS Series is a modular control and I/O expansion platform designed for scalable, distributed automation systems. It enables seamless integration between edge gateways, controllers, and field devices through a flexible and reliable architecture.
+
+Built with a focus on modularity, interoperability, and real-time performance, NEXIS allows system designers to expand I/O capacity effortlessly while maintaining robust communication and control."
+,"Our Contribution
+Complete modular hardware platform design
+Development of scalable I/O expansion architecture
+Multi-interface signal acquisition and control design
+Reliable field communication integration (RS485-based networks)
+System optimization for distributed control environments"
+,"Platform Highlights
+Modular Expansion
+Plug-and-expand architecture supporting multiple I/O configurations
+Flexible I/O Handling
+Supports both analog and digital signals within the same ecosystem
+Distributed System Design
+Enables placement of I/O closer to field devices, reducing wiring complexity
+Reliable Communication Backbone
+Designed for stable operation across multi-device networks
+Real-Time Control Capability
+Ensures fast response for monitoring and actuation"
+,"I/O Capabilities
+Analog Inputs
+Supports voltage, current, and resistive-based sensors
+Analog Outputs
+Provides control signals such as 0�10V and 4�20mA
+Digital Inputs
+Supports dry contact and logic-based status signals
+Digital Outputs
+Enables control of external devices through transistor outputs"
+,"System Characteristics
+Scalable architecture for small to large deployments
+Designed for robust field operation and noise immunity
+Flexible configuration for varied system requirements
+Optimized for integration with edge gateways and controllers"
+,"Outcome
+
+The NEXIS platform demonstrates our capability to build modular, scalable control ecosystems, enabling efficient integration of field-level signals with higher-level systems while ensuring reliability, flexibility, and ease of deployment."
+,
+KTY81/210 to 4-20mA converter,"Signal Converter  KTY81-210 to 420mA
+
+We designed and developed a signal converter that translates temperature readings from KTY81-210 sensors into a standardized 420mA output, enabling seamless integration with industrial control and monitoring systems.
+
+The device ensures accurate and stable signal conditioning, allowing temperature data to be reliably transmitted over long distances with minimal noise impact. It is engineered for consistent performance in demanding environments, making it suitable for real-time monitoring and control applications."
+,"Key Features
+Sensor Compatibility
+Supports KTY81-210 temperature sensors
+Standardized Output
+Converts temperature readings into industry-standard 420mA signals
+High Accuracy & Stability
+Designed for precise signal conditioning and minimal drift
+Noise-Resilient Transmission
+Ideal for long-distance signal transmission in industrial environments
+Robust Design
+Reliable operation across varying environmental conditions"
+,"Engineering Highlights
+Optimized signal conditioning and linearization for temperature sensors
+Stable analog output generation (420mA loop)
+Designed for low-noise and high-reliability performance
+Compact and integration-friendly hardware design
+"Output
+
+This signal converter enables efficient integration of temperature sensing into control systems, ensuring accurate, real-time data acquisition and improving overall system responsiveness and reliability."
+,
+MODBUS RTU to BACNET MSTP converter,"Protocol Converter  Modbus RTU to BACnet MS/TP
+
+We designed and developed a protocol converter that seamlessly bridges communication between Modbus RTU and BACnet MS/TP networks, enabling interoperability between devices operating on different industrial protocols.
+
+This solution allows legacy and modern systems to integrate effortlessly, translating data in real-time while maintaining accuracy and communication reliability. It simplifies system integration by eliminating protocol barriers and reducing the complexity of multi-vendor environments."
+,"Key Features
+Protocol Bridging
+Enables communication between Modbus RTU and BACnet MS/TP devices
+Real-Time Data Translation
+Ensures accurate and consistent data mapping across protocols
+Seamless Integration
+Connects heterogeneous systems without major infrastructure changes
+Minimal Configuration
+Simplifies commissioning and deployment
+Reliable Communication
+Designed for stable operation in multi-device networks"
+,"Engineering Highlights
+Robust protocol stack implementation for Modbus RTU and BACnet MS/TP
+Efficient data mapping and register translation logic
+Optimized for low latency and high communication reliability
+Designed to handle multi-device network environments
+Scalable architecture for expanding system requirements"
+,"Outcome
+
+This converter enables efficient integration of diverse control systems, allowing seamless data exchange and improving overall system interoperability, flexibility, and performance."
+,
+Nozzle controller,"Nozzle Controller  Multi-Channel PWM Control
+
+We designed and developed a Nozzle Controller capable of managing up to 8 nozzles using PWM-based control, enabling precise and adaptable operation for industrial fluid and spray systems.
+
+The controller provides real-time monitoring, communication interfaces, and HMI integration, ensuring intuitive control and system visibility. It is engineered for reliable performance with comprehensive protection mechanisms, delivering safe and consistent operation in demanding environments."
+,"Key Features
+Multi-Nozzle Control
+Supports up to 8 nozzles with independent or synchronized operation
+PWM-Based Control
+Enables precise modulation of flow and actuation control
+HMI Integration
+User-friendly interface for monitoring, configuration, and control
+Real-Time Communication
+Supports integration with higher-level systems
+Comprehensive Protection
+Includes overvoltage, undervoltage, overload, and power protection"
+,"Engineering Highlights
+Multi-channel PWM control architecture for fine actuation control
+Optimized signal generation for stable and responsive output
+Robust power and protection circuit design
+Designed for consistent performance under dynamic load conditions
+Flexible control logic for configurable operation modes"
+,"Outcome
+
+The Nozzle Controller delivers precise, reliable, and efficient multi-channel control, improving process consistency, reducing manual intervention, and enhancing overall system performance."
+,
+bio dosing controller,"Bio-Dosing Controller  Precision Fluid Application System
+
+We designed and developed a Bio-Dosing Controller engineered for precise and consistent spraying of fluid over material surfaces. The system enables accurate dosing control, real-time monitoring, and seamless integration with industrial processes.
+
+The controller is optimized to ensure uniform fluid distribution, improving process consistency while minimizing wastage. It combines flexible control logic, intuitive interfacing, and robust hardware design for reliable field operation."
+,"Key Features
+Precision Dosing Control
+Ensures accurate and repeatable fluid application
+Flexible Control Logic
+Supports configurable operation for different process requirements
+Multi-Channel Control
+Enables control of multiple spray points/nozzles
+HMI Integration
+Provides an intuitive interface for monitoring and parameter configuration
+Real-Time Operation
+Allows continuous monitoring and dynamic control adjustments"
+,"Engineering Highlights
+Developed a custom control architecture tailored for dosing applications
+Implemented timing and sequence-based control strategies for uniform spraying
+Optimized fluid delivery accuracy and repeatability
+Designed robust I/O handling for sensors and actuators
+Ensured stable performance in continuous industrial environments"
+,"Outcome
+
+The Bio-Dosing Controller delivers consistent, controlled, and efficient fluid application, improving process reliability, reducing waste, and enabling better operational control through a compact and scalable solution."
+,
+solenoid controller,"Solenoid Controller  Sweep Frequency Control System
+
+We designed and developed a Solenoid Controller engineered to drive solenoid coils using sweep frequency control, enabling optimized performance and improved operational efficiency.
+
+The system features an integrated 162 LCD display that provides real-time visualization of frequency sweep behavior, system status, fault conditions, and timing parameters. It is designed to offer precise control, enhanced monitoring, and reliable operation in demanding environments."
+,"Key Features
+Sweep Frequency Control
+Enables dynamic frequency variation for optimized solenoid performance
+Real-Time Visualization
+162 LCD displays frequency sweep curve, system status, and faults
+Precise Control
+Fine-tuned frequency and timing control for consistent operation
+Fault Detection
+Identifies system abnormalities and ensures safe operation
+User-Friendly Interface
+Simplifies monitoring and configuration"
+,"Engineering Highlights
+Developed frequency sweep generation algorithms for solenoid optimization
+Designed stable and efficient coil driving circuitry
+Integrated real-time monitoring and fault detection mechanisms
+Implemented timing and control logic for repeatable operation
+Optimized for reliability under varying load conditions"
+,"Outcome
+
+The Solenoid Controller delivers efficient, precise, and reliable control of solenoid systems, improving performance, enabling better diagnostics, and ensuring consistent operation across applications."
+,
+inrush limiter,"Inrush Limiter Relay  Controlled Startup Protection
+
+We designed and developed an Inrush Limiter Relay to effectively manage and limit high inrush currents during the initial power-up of electrical equipment, ensuring a smooth and controlled startup.
+
+The system protects critical components from sudden current surges, reducing electrical stress and enhancing overall system reliability. It is engineered to deliver consistent performance across a wide range of industrial environments."
+,"Key Features
+Inrush Current Limiting
+Controls high startup currents to prevent system stress
+Smooth Power-Up
+Enables gradual and safe energization of equipment
+Component Protection
+Extends the lifespan of motors, transformers, and power supplies
+Reliable Operation
+Designed for stable performance in industrial conditions
+Compact & Integration-Friendly
+Easily integrates into existing electrical systems"
+,"Engineering Highlights
+Designed controlled switching mechanism for inrush current management
+Optimized for reduced electrical stress during startup
+Robust relay and protection circuit design
+Ensured consistent performance across varying load conditions
+Focused on long-term reliability and safety"
+,"Outcome
+
+The Inrush Limiter Relay enhances system stability by enabling safe and controlled equipment startup, reducing failure risks and improving the longevity of electrical components."
+,
+"3ph 2500W, 6 pulse rectifier","3-Phase ACDC Rectifier  6 Pulse Conversion System
+
+We designed and developed a 3-phase AC to DC rectifier (6-pulse) to efficiently convert AC input power into stable DC output for industrial applications.
+
+The system is engineered for high efficiency, reliable operation, and consistent DC output under varying load conditions. With optimized rectification and filtering, it ensures reduced ripple and improved power quality for downstream systems."
+,"Key Features
+6-Pulse Rectification Topology
+Efficient conversion of 3-phase AC to DC
+Stable DC Output
+Designed to deliver consistent voltage under dynamic load conditions
+Low Ripple Performance
+Optimized filtering for improved output quality
+High Efficiency Operation
+Minimizes power loss during conversion
+Robust Design
+Suitable for continuous operation in industrial environments"
+,"Engineering Highlights
+Implemented 3-phase bridge rectifier topology (6-pulse)
+Designed filtering stage to reduce output ripple
+Optimized for thermal performance and load handling
+Ensured stable operation across input variations
+Focused on reliability and long-term performance"
+,"Outcome
+
+The rectifier provides a reliable and efficient DC power source, improving system stability and ensuring consistent performance for power-driven applications."
