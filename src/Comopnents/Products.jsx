@@ -497,7 +497,7 @@ const Products = () => {
       if (displayItems.length === 0) return;
 
       const newIndex = Math.min(
-        Math.floor(latest * displayItems.length),
+        Math.floor(latest * 0.5 * displayItems.length),
         displayItems.length - 1
       );
       setActiveIndex(newIndex);
@@ -625,7 +625,7 @@ const Products = () => {
                 className="absolute bottom-10 right-10 flex items-center gap-4 opacity-40 z-50 pointer-events-none"
                 style={{ color: colors.text }}
               >
-                <span className="text-[10px] uppercase tracking-widest font-black whitespace-nowrap">Scroll to Disassemble</span>
+                {/* <span className="text-[10px] uppercase tracking-widest font-black whitespace-nowrap">Scroll to Disassemble</span> */}
                 <div className="w-12 h-1 bg-sky-500 rounded-full" />
               </motion.div>
             </div>

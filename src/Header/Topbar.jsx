@@ -190,7 +190,7 @@ const Topbar = () => {
                       }`
                     }
                   >
-                    Products
+                    Portfolio
                   </NavLink>
                 </li>
                 <li>

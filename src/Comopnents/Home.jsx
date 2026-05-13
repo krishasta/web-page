@@ -347,8 +347,10 @@ const Home = () => {
               modules={[Pagination, Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
+              loop={true}
+              speed={900}
               pagination={{ clickable: true }}
-              autoplay={{ delay: 5000 }}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
               className="rounded-[2.5rem] overflow-hidden"
             >
               <SwiperSlide>
@@ -433,8 +435,10 @@ const Home = () => {
                     modules={[Pagination, Autoplay]}
                     spaceBetween={20}
                     slidesPerView={1}
+                    loop={true}
+                    speed={900}
                     pagination={{ clickable: true }}
-                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    autoplay={{ delay: 5000, disableOnInteraction: false }}
                     className="pb-16"
                   >
                     {values.map((value, index) => (
