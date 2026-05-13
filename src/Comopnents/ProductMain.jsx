@@ -125,11 +125,12 @@ const ProductMain = () => {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           autoplay={{
-            delay: 1500,
+            delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true
           }}
           loop={true}
+          speed={1200}
           pagination={{
             clickable: true,
             dynamicBullets: true,

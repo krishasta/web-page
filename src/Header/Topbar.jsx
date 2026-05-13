@@ -169,6 +169,18 @@ const Topbar = () => {
                     Home
                   </NavLink>
                 </li>
+                  <li>
+                  <NavLink
+                    to="/product"
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) =>
+                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                      }`
+                    }
+                  >
+                    Portfolio
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink
                     to="/service"
@@ -181,18 +193,7 @@ const Topbar = () => {
                     Services
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="/product"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Portfolio
-                  </NavLink>
-                </li>
+              
                 <li>
                   <NavLink
                     to="/blog"
