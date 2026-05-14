@@ -637,6 +637,9 @@ const Products = () => {
 
           {/* Mobile/Tablet Version: Swiper (Visible on screens smaller than XL) */}
           <div className="xl:hidden min-h-screen pt-24 pb-20">
+            <div className="mb-6 flex justify-center opacity-40 animate-pulse">
+              <span className="text-[10px] uppercase tracking-widest font-black">Swipe to Explore</span>
+            </div>
             <Swiper
               modules={[Pagination, Autoplay, Navigation]}
               spaceBetween={30}
@@ -688,9 +691,7 @@ const Products = () => {
               })}
             </Swiper>
 
-            <div className="mt-6 flex justify-center opacity-40 animate-pulse">
-              <span className="text-[10px] uppercase tracking-widest font-black">Swipe to Explore</span>
-            </div>
+
           </div>
         </>
 
