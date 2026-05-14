@@ -28,7 +28,7 @@ const Router = createBrowserRouter([
       {path:'portfolio/:title',element:<Products/>}
       
     ]
-  } 
+  }
 ]);
 
 export default Router;
