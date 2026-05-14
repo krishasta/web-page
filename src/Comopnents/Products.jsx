@@ -636,13 +636,13 @@ const Products = () => {
           </div>
 
           {/* Mobile/Tablet Version: Swiper (Visible on screens smaller than XL) */}
-          <div className="xl:hidden min-h-screen pt-24 pb-12">
+          <div className="xl:hidden min-h-screen pt-24 pb-20">
             <Swiper
               modules={[Pagination, Autoplay, Navigation]}
               spaceBetween={30}
               slidesPerView={1}
               pagination={{ clickable: true }}
-              className="w-full h-full"
+              className="w-full"
             >
               {displayItems.map((item, i) => {
                 // For mobile, we also want to persist the image if it's null
@@ -668,7 +668,7 @@ const Products = () => {
                       </div>
 
                       {/* Text Stage */}
-                      <div className="max-w-md mx-auto">
+                      <div className="max-w-md mx-auto pb-20">
                         <h2 className="text-3xl font-black mb-4 leading-tight bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] bg-clip-text text-transparent uppercase tracking-tight">
                           {displayItems[0].title}
                         </h2>
@@ -688,7 +688,7 @@ const Products = () => {
               })}
             </Swiper>
 
-            <div className="mt-12 flex justify-center opacity-40 animate-pulse">
+            <div className="mt-6 flex justify-center opacity-40 animate-pulse">
               <span className="text-[10px] uppercase tracking-widest font-black">Swipe to Explore</span>
             </div>
           </div>

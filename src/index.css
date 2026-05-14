@@ -47,17 +47,22 @@ body {
 }
 
 /* Custom Swiper Pagination for Inter theme */
+.swiper-pagination {
+  bottom: 0px !important;
+}
+
 .swiper-pagination-bullet {
-  width: 12px;
+  width: 8px;
   height: 4px;
   border-radius: 2px;
   background: #94a3b8 !important;
   opacity: 0.3;
   transition: all 0.3s;
+  margin: 0 4px !important;
 }
 
 .swiper-pagination-bullet-active {
-  width: 32px;
+  width: 24px;
   background: var(--primary) !important;
   opacity: 1;
 }
