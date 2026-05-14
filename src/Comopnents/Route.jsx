@@ -17,15 +17,15 @@ const Router = createBrowserRouter([
     element: <App />,
     children: [
       { path: 'contact', element: <Contact  />},
-      { path: 'portfolio', element: <Portfolio /> },
+      // { path: 'portfolio', element: <Portfolio /> },
       { path: 'service', element: <Service /> },
       { path: 'blog', element: <Blog /> },
       { index: true, element: <Home /> },
       {path:'blog_main/:id',element:<BLog_main/>},
       {path:'thinking',element:<Thinking/>},
-      {path:'product',element:<ProductMain/>},
+      {path:'portfolio',element:<ProductMain/>},
       {path:`team`,element:<Teams/>},
-      {path:'products/:title',element:<Products/>}
+      {path:'portfolio/:title',element:<Products/>}
       
     ]
   } 
