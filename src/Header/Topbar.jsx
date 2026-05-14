@@ -63,7 +63,7 @@ const Topbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/product"
+                  to="/portfolio"
                   className={({ isActive }) =>
                     `transition-all duration-300 hover:text-[var(--primary)] whitespace-nowrap relative py-1 ${isActive ? "text-[var(--primary)] font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[var(--primary)]" : "text-[var(--text-secondary)]"
                     }`
@@ -144,102 +144,113 @@ const Topbar = () => {
         {/* Mobile Menu Dropdown */}
         <AnimatePresence>
           {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="md:hidden absolute top-full left-0 right-0 -z-10 shadow-xl border-t"
-              style={{
-                background: "var(--bg-primary)",
-                borderBottom: "1px solid var(--border)",
-                borderColor: "var(--border)",
-              }}
-            >
-              <ul className="flex flex-col p-6 gap-4 font-semibold text-sm">
-                <li>
-                  <NavLink
-                    to="/"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Home
-                  </NavLink>
-                </li>
+            <>
+              {/* Backdrop to close menu when clicking outside */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setIsOpen(false)}
+                className="md:hidden fixed inset-0 bg-black/5 backdrop-blur-[1px] z-[-20]"
+              />
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="md:hidden absolute top-full left-0 right-0 -z-10 shadow-xl border-t"
+                style={{
+                  background: "var(--bg-primary)",
+                  borderBottom: "1px solid var(--border)",
+                  borderColor: "var(--border)",
+                }}
+              >
+                <ul className="flex flex-col p-6 gap-4 font-semibold text-sm">
                   <li>
-                  <NavLink
-                    to="/product"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Portfolio
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/service"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Services
-                  </NavLink>
-                </li>
-              
-                <li>
-                  <NavLink
-                    to="/blog"
-                    className={({ isActive }) =>
-                      `transition-all duration-300 hover:text-[var(--primary)] whitespace-nowrap relative py-1 ${isActive ? "text-[var(--primary)] font-bold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Thinking
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/team"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Team
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/contact"
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
-                      }`
-                    }
-                  >
-                    Contact Us
-                  </NavLink>
-                </li>
-                <li className="pt-2 border-t border-[var(--border)] flex items-center justify-between">
-                  <span className="text-sm opacity-70">Switch Theme</span>
-                  <button
-                    onClick={() => setDark(!dark)}
-                    className="p-3 rounded-xl bg-[var(--surface)] shadow-sm text-xl flex items-center justify-center border border-[var(--border)]"
-                  >
-                    {dark ? "☀️" : "🌙"}
-                  </button>
-                </li>
-              </ul>
-            </motion.div>
+                    <NavLink
+                      to="/"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/portfolio"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Portfolio
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/service"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Services
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink
+                      to="/blog"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Thinking
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/team"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Team
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/contact"
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) =>
+                        `block transition-all duration-300 ${isActive ? "text-[var(--primary)]" : "text-[var(--text-secondary)]"
+                        }`
+                      }
+                    >
+                      Contact Us
+                    </NavLink>
+                  </li>
+                  <li className="pt-2 border-t border-[var(--border)] flex items-center justify-between">
+                    <span className="text-sm opacity-70">Switch Theme</span>
+                    <button
+                      onClick={() => setDark(!dark)}
+                      className="p-3 rounded-xl bg-[var(--surface)] shadow-sm text-xl flex items-center justify-center border border-[var(--border)]"
+                    >
+                      {dark ? "☀️" : "🌙"}
+                    </button>
+                  </li>
+                </ul>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>

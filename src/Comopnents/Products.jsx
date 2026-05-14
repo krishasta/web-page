@@ -497,7 +497,7 @@ const Products = () => {
       if (displayItems.length === 0) return;
 
       const newIndex = Math.min(
-        Math.floor(latest * 0.5 * displayItems.length),
+        Math.floor(latest * displayItems.length),
         displayItems.length - 1
       );
       setActiveIndex(newIndex);
@@ -545,7 +545,11 @@ const Products = () => {
 
   // We need exactly the 3 images from the filtered items for the animation setup
   // We assume the items are ordered correctly based on id (e.g. Assembled, PCB, etc)
-  const layerImages = displayItems.map(item => item.image || item.image1 || item.image2 || item.image3);
+  const layerImages = displayItems.map(item => 
+    item.image || item.image1 || item.image2 || item.image3 || 
+    item.image4 || item.image5 || item.image6 || item.image7 || 
+    item.image8 || item.image9 || item.image10
+  );
 
   return (
     <div

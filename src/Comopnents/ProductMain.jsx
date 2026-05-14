@@ -164,7 +164,7 @@ const ProductMain = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <NavLink
-                    to={`/products/${product.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`}
+                    to={`/portfolio/${product.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`}
                     state={product}
                     className={`group relative flex flex-col rounded-[2.5rem] overflow-hidden transition-all duration-500 h-full
                                 ${styles.glass} ] hover:shadow-[0_40px_80px_rgba(0,0,0,0.25)]`}
