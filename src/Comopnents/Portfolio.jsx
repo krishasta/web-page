@@ -27,46 +27,16 @@ const Portfolio = () => {
       accent: "#0284c7",
     };
   const images = [
-    {
-      title: "STM32F207 Development PCB",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture8.jpg",
-    },
-    {
-      title: "Solenoid Controller",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture4-600x440.png",
-    },
-    {
-      title: "Signal Converter",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture2.png",
-    },
-    {
-      title: "Nozzle Controller",
-      item: "https://solve.net.in/product/nozzle-controller/",
-    },
-    {
-      title: "Motor Protection Relay",
-      item: "https://solve.net.in/product/nozzle-controller/",
-    },
-    {
-      title: "Modbus to BACnet Converter",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture6-600x319.png",
-    },
-    {
-      title: "Inrush Limiter Relay",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture5-600x361.png",
-    },
-    {
-      title: "Analog Motor Controller",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture1-600x288.png",
-    },
-    {
-      title: "AC to DC Rectifier",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture7.png",
-    },
-    {
-      title: "5-Channel Opto Isolator",
-      item: "https://solve.net.in/wp-content/uploads/2024/09/Picture9-600x321.jpg",
-    },
+    { title: "STM32F207 Development PCB", file: "picture8", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture8.jpg" },
+    { title: "Solenoid Controller", file: "picture4", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture4-600x440.png" },
+    { title: "Signal Converter", file: "picture2", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture2.png" },
+    { title: "Nozzle Controller", fallback: "https://solve.net.in/product/nozzle-controller/" },
+    { title: "Motor Protection Relay", fallback: "https://solve.net.in/product/nozzle-controller/" },
+    { title: "Modbus to BACnet Converter", file: "picture6", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture6-600x319.png" },
+    { title: "Inrush Limiter Relay", file: "picture5", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture5-600x361.png" },
+    { title: "Analog Motor Controller", file: "picture1", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture1-600x288.png" },
+    { title: "AC to DC Rectifier", file: "picture7", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture7.png" },
+    { title: "5-Channel Opto Isolator", file: "picture9", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture9-600x321.jpg" },
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -102,11 +72,34 @@ const Portfolio = () => {
             }}
           >
             {/* Image */}
-            <img
-              src={i.item}
-              alt={i.title}
-              className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
-            />
+            {i.file ? (
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`${[400,800,1200].map(w => `/images/prod/${i.file}-${w}.webp ${w}w`).join(', ')}`}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <img
+                  src={`/images/prod/${i.file}-800.jpg`}
+                  alt={i.title}
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
+                  width={800}
+                  height={450}
+                />
+              </picture>
+            ) : (
+              <img
+                src={i.fallback}
+                alt={i.title}
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
+              />
+            )}
 
             {/* Overlay Button */}
             <div
