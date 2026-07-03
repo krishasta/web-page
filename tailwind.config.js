@@ -5,6 +5,16 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "serif"],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: { fontFamily: '"Playfair Display", Georgia, serif' },
+            h2: { fontFamily: '"Playfair Display", Georgia, serif' },
+            h3: { fontFamily: '"Playfair Display", Georgia, serif' },
+          },
+        },
       },
       keyframes: {
         fadeInFast: {
