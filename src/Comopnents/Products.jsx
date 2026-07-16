@@ -505,7 +505,7 @@ const Products = () => {
   }, [scrollYProgress, displayItems.length]);
   // CSV LOAD
   useEffect(() => {
-    Papa.parse("/products.csv", {
+    Papa.parse(`/products.csv?v=${new Date().getTime()}`, {
       download: true,
       header: true,
       skipEmptyLines: true,
