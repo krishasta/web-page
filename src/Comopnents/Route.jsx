@@ -10,6 +10,8 @@ import Products from "./Products"
 import ProductMain from "./ProductMain";
 import Teams from "./Teams";
 import Thinking from "./Thinking";
+import TermsAndConditions from "./TermsAndConditions";
+import Legal from "./Legal";
 
 const Router = createBrowserRouter([
   {
@@ -25,7 +27,9 @@ const Router = createBrowserRouter([
       {path:'thinking',element:<Thinking/>},
       {path:'portfolio',element:<ProductMain/>},
       {path:`team`,element:<Teams/>},
-      {path:'portfolio/:title',element:<Products/>}
+      {path:'portfolio/:title',element:<Products/>},
+      {path:'terms-and-conditions',element:<TermsAndConditions/>},
+      {path:'legal',element:<Legal/>}
       
     ]
   }

@@ -426,9 +426,11 @@ const ExplodedImageGallery = ({ images, activeIndex, interactiveMode }) => {
                 scale: isEffective ? (interactiveMode ? undefined : 1) : 0.95,
               }}
               transition={{ duration: 1 }}
+              loading={i === 0 ? "eager" : "lazy"}
               style={{
                 pointerEvents: isEffective ? "auto" : "none",
-                zIndex: isEffective ? 50 : 0
+                zIndex: isEffective ? 50 : 0,
+                willChange: "opacity, transform"
               }}
               className="absolute max-h-[70vh] w-auto object-contain drop-shadow-2xl"
             />
@@ -665,6 +667,8 @@ const Products = () => {
                             transition={{ duration: 0.8 }}
                             src={effectiveImage}
                             alt={item.title}
+                            loading={i === 0 ? "eager" : "lazy"}
+                            style={{ willChange: "opacity, transform" }}
                             className="max-h-full max-w-full object-contain drop-shadow-2xl relative z-10"
                           />
                         )}

@@ -11,6 +11,8 @@ const pages = [
   { label: "Product", to: "/product" },
   { label: "Our Team", to: "/team" },
   { label: "Contact Us", to: "/contact" },
+  { label: "Terms & Conditions", to: "/terms-and-conditions" },
+  { label: "Legal", to: "/legal" },
 ];
 
 const socials = [
@@ -25,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="py-10 px-6 transition-colors duration-300"
+      className="py-20 px-6 transition-colors duration-300"
       style={{
         background: "var(--bg-primary)",
         borderTop: "1px solid var(--border)",
@@ -42,13 +44,13 @@ const Footer = () => {
 
         {/* Page Links */}
         <div className="text-center md:text-left">
-          {/* <h3
+          <h3
             className="font-bold mb-3 uppercase text-xs tracking-widest"
             style={{ color: "var(--text-primary)" }}
           >
             Pages
-          </h3> */}
-          {/* <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2">
+          </h3>
+          <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2">
             {pages.map(({ label, to }) => (
               <li key={to}>
                 <Link
@@ -60,7 +62,7 @@ const Footer = () => {
                 </Link>
               </li>
             ))}
-          </ul> */}
+          </ul>
           <p className="text-xs mt-1 opacity-60">© {new Date().getFullYear()} Solve. All rights reserved.</p>
 
         </div>
