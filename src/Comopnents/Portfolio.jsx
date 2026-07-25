@@ -72,34 +72,18 @@ const Portfolio = () => {
             }}
           >
             {/* Image */}
-            {i.file ? (
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={`${[400,800,1200].map(w => `/images/prod/${i.file}-${w}.webp ${w}w`).join(', ')}`}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <img
-                  src={`/images/prod/${i.file}-800.jpg`}
-                  alt={i.title}
-                  loading="lazy"
-                  decoding="async"
-                  fetchpriority="low"
-                  className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
-                  width={800}
-                  height={450}
-                />
-              </picture>
-            ) : (
-              <img
-                src={i.fallback}
-                alt={i.title}
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
-              />
-            )}
+            <img
+              src={i.file ? `/images/prod/${i.file}-800.webp` : i.fallback}
+              alt={i.title}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-56 sm:h-64 md:h-72 object-cover rounded-2xl transform transition duration-500 hover:scale-105"
+              onError={(e) => {
+                if (i.fallback && e.target.src !== i.fallback) {
+                  e.target.src = i.fallback;
+                }
+              }}
+            />
 
             {/* Overlay Button */}
             <div

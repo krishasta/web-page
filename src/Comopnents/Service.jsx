@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "./ThemeContext";
-import system_architecture from "../../public/images/services/system architecture.jpg.jpeg"
-import industrial_design from "../../public/images/services/industrial design.jpg.jpeg"
-import electronics_design from "../../public/images/services/electronics design.jpg.jpeg"
-import project_management from "../../public/images/services/project mgmt.jpg.jpeg"
-import manufacturing from "../../public/images/services/manufacturing.jpg.jpeg"
-import compliance_testing from "../../public/images/services/compliance.jpg.jpeg"
-import turnkey_solutions from "../../public/images/services/turnkey.jpg.jpeg"
-import software_development from "../../public/images/services/software development.jpg.jpeg"
-import sa from "../../public/images/services/sa.png"
-import ed from "../../public/images/services/ed.png"
-import sd from "../../public/images/services/sd.png"
-import pm from "../../public/images/services/pm.png"
-import mfg from "../../public/images/services/mfg.png"
-import ct from "../../public/images/services/ct.png"
-import ts from "../../public/images/services/ts.png"
-import id from "../../public/images/services/id.png"
+const system_architecture = "/images/services/system architecture.jpg.webp";
+const industrial_design = "/images/services/industrial design.jpg.webp";
+const electronics_design = "/images/services/electronics design.jpg.webp";
+const project_management = "/images/services/project mgmt.jpg.webp";
+const manufacturing = "/images/services/manufacturing.jpg.webp";
+const compliance_testing = "/images/services/compliance.jpg.webp";
+const turnkey_solutions = "/images/services/turnkey.jpg.webp";
+const software_development = "/images/services/software development.jpg.webp";
+const sa = "/images/services/sa.webp";
+const ed = "/images/services/ed.webp";
+const sd = "/images/services/sd.webp";
+const pm = "/images/services/pm.webp";
+const mfg = "/images/services/mfg.webp";
+const ct = "/images/services/ct.webp";
+const ts = "/images/services/ts.webp";
+const id = "/images/services/id.webp";
 const Service = () => {
   const { dark } = useTheme();
   const [hover, setHover] = useState(null);

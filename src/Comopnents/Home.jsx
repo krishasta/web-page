@@ -9,10 +9,10 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import image from "../../public/images/Main image/mission.jpg.jpeg"
-import image2 from "../../public/images/Main image/vision.jpg.jpeg"
-import image3 from "../../public/images/Main image/passion.jpg.jpeg"
-import valuesImage from "../../public/images/Main image/values.jpg.jpeg"
+const image = "/images/Main image/mission.jpg.webp";
+const image2 = "/images/Main image/vision.jpg.webp";
+const image3 = "/images/Main image/passion.jpg.webp";
+const valuesImage = "/images/Main image/values.jpg.webp";
 const Home = () => {
   const { dark } = useTheme();
   const containerRef = useRef(null);
