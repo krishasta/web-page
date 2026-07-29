@@ -152,7 +152,7 @@ const Contact = () => {
                     className="mt-[5px] w-2.5 h-2.5 rounded-full flex-shrink-0"
                     style={{ background: dark ? "#38bdf8" : "#2563eb" }}
                   />
-                  <span>Contact Number: 9342245655</span>
+                  <span>Contact Number: 6381573121</span>
                 </li>
               </ul>
             </div>
