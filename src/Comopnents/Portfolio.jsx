@@ -38,9 +38,7 @@ const Portfolio = () => {
     { title: "AC to DC Rectifier", file: "picture7", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture7.png" },
     { title: "5-Channel Opto Isolator", file: "picture9", fallback: "https://solve.net.in/wp-content/uploads/2024/09/Picture9-600x321.jpg" },
   ];
-
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
     <div className="min-h-screen pt-20 transition-colors duration-400" style={{ background: colors.sectionBg, color: colors.bodyText }}>
       {/* Section Heading */}
@@ -52,7 +50,6 @@ const Portfolio = () => {
           Our latest PCB designs & controllers
         </p>
       </div>
-
       {/* Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-20">
         {images.map((i, index) => (
